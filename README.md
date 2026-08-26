@@ -274,8 +274,8 @@ local function showWhatsNew()
         "✦ التحديثات الجديدة ✦",
         "",
         "🔹 انترو جديد بتصميم الكتيبه",
-        "🔹 تم تغيير ريموت الشات في خانة النسخ",
-        "🔹 تم إضافة زرين في خانة النسخ:",
+        "🔹 تم اضافه استهداف او نسخ على اكثر من شخص",
+        "🔹 اضافه سكربت للصمله قوي:",
         "   • اسم كامل — يرسل الأوامر بالاسم الكامل",
         "   • ثلاث حروف — يرسل الأوامر بأول ٣ حروف فقط",
         "🔹 تم حذف التايتال لان انتهت الثغرة",
@@ -1409,7 +1409,7 @@ local titleBtn     = makeBigBtn(ctrlScroll, "تقليد الشات", 436,
     Color3.fromRGB(170, 70, 220), Color3.fromRGB(100, 30, 150))
 local allBtn       = makeBigBtn(ctrlScroll, "نسخ all", 490,
     Color3.fromRGB(30, 180, 255), Color3.fromRGB(10, 100, 180))
-local blueBtn      = makeBigBtn(ctrlScroll, "نسخه معدلة من سكربت بلو", 544,
+local blueBtn      = makeBigBtn(ctrlScroll, "سكربت صمله قوي", 544,
     Color3.fromRGB(0, 120, 255), Color3.fromRGB(0, 60, 160))
 local afkBtn       = makeBigBtn(ctrlScroll, "تحكم في شات ال afk أو أحد مايعرف يسولف", 598,
     Color3.fromRGB(255, 160, 0), Color3.fromRGB(180, 90, 0))
@@ -1911,7 +1911,7 @@ titleBtn.MouseButton1Click:Connect(function()
     ctrlStatus.Text = "جاري تشغيل مراقبة الشات..."
     task.spawn(function()
         local ok, err = pcall(function()
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/Shhd-code/NAH/refs/heads/main/README.md"))()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/PeakRayan/Rayan/refs/heads/main/7a"))()
         end)
         if ok then ctrlStatus.Text = "تم تشغيل مراقبة الشات"
         else ctrlStatus.Text = "فشل: " .. tostring(err):sub(1, 60) end
@@ -1922,7 +1922,7 @@ spamBtn.MouseButton1Click:Connect(function()
     ctrlStatus.Text = "جاري تشغيل السبام..."
     task.spawn(function()
         local ok, err = pcall(function()
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/Shhd-code/SH_spam_neo/refs/heads/main/README.md"))()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/PeakRayan/Rayan/refs/heads/main/7ali"))()
         end)
         if ok then ctrlStatus.Text = "تم تشغيل السبام"
         else ctrlStatus.Text = "فشل: " .. tostring(err):sub(1, 60) end
@@ -1933,7 +1933,7 @@ skinsBtn.MouseButton1Click:Connect(function()
     ctrlStatus.Text = "جاري تشغيل السكنات..."
     task.spawn(function()
         local ok, err = pcall(function()
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/Shhd-code/Skinn-neooo/refs/heads/main/README.md"))()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/PeakRayan/Rayan/refs/heads/main/Ra"))()
         end)
         if ok then ctrlStatus.Text = "تم تشغيل السكنات"
         else ctrlStatus.Text = "فشل: " .. tostring(err):sub(1, 60) end
@@ -1944,7 +1944,7 @@ allBtn.MouseButton1Click:Connect(function()
     ctrlStatus.Text = "جاري تشغيل نسخ all..."
     task.spawn(function()
         local ok, err = pcall(function()
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/Shhd-code/All/refs/heads/main/README.md"))()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/PeakRayan/Rayan/refs/heads/main/Ray"))()
         end)
         if ok then ctrlStatus.Text = "تم تشغيل نسخ all"
         else ctrlStatus.Text = "فشل: " .. tostring(err):sub(1, 60) end
@@ -1953,13 +1953,13 @@ end)
 
 local blueLoaded = false
 blueBtn.MouseButton1Click:Connect(function()
-    if blueLoaded then ctrlStatus.Text = "نسخه معدلة من سكربت بلو مفعلة بالفعل" return end
-    ctrlStatus.Text = "جاري تشغيل نسخه معدلة من سكربت بلو..."
+    if blueLoaded then ctrlStatus.Text = "سكربت صمله قوي مفعلة بالفعل" return end
+    ctrlStatus.Text = "جاري تشغيل من سكربت صمله قوي..."
     task.spawn(function()
         local ok, err = pcall(function()
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/Shhd-code/Blsh/refs/heads/main/README.md"))()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/PeakRayan/Rayan/refs/heads/main/script.lua"))()
         end)
-        if ok then blueLoaded = true; ctrlStatus.Text = "تم تشغيل نسخه معدلة من سكربت بلو"
+        if ok then blueLoaded = true; ctrlStatus.Text = "تم تشغيل سكربت صمله قوي"
         else ctrlStatus.Text = "فشل: " .. tostring(err):sub(1, 60) end
     end)
 end)
@@ -1970,7 +1970,7 @@ afkBtn.MouseButton1Click:Connect(function()
     ctrlStatus.Text = "جاري تشغيل AFK..."
     task.spawn(function()
         local ok, err = pcall(function()
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/Shhd-code/Afk/refs/heads/main/README.md"))()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/PeakRayan/Rayan/refs/heads/main/Raya"))()
         end)
         if ok then afkLoaded = true; ctrlStatus.Text = "تم تشغيل AFK ✅"
         else ctrlStatus.Text = "فشل: " .. tostring(err):sub(1, 60) end
