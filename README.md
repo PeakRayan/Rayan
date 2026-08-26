@@ -157,7 +157,7 @@ local function showTeamCard()
         end
 
         -- الحقوق
-        makePersonCard("7aliv9a", "✦ صاحب السكربت والمطور", 3)
+        makePersonCard("7aliv9", "✦ صاحب السكربت والمطور", 3)
 
         -- زر إغلاق
         local closeBtn = Instance.new("TextButton", card)
@@ -273,7 +273,7 @@ local function showWhatsNew()
     local bodyLines = {
         "✦ التحديثات الجديدة ✦",
         "",
-        "🔹 انترو جديد بتصميم NEXUS",
+        "🔹 انترو جديد بتصميم الكتيبه",
         "🔹 تم تغيير ريموت الشات في خانة النسخ",
         "🔹 تم إضافة زرين في خانة النسخ:",
         "   • اسم كامل — يرسل الأوامر بالاسم الكامل",
@@ -283,7 +283,7 @@ local function showWhatsNew()
         "",
         "",
         "",
-        "الحقوق: 7aliv9a ©",
+        "الحقوق: 7aliv9 ©",
     }
 
     local bodyLbl = Instance.new("TextLabel", card)
